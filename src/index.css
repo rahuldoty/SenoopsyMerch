@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 70% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 270 50% 8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 270 50% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 270 80% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 300 90% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 20% 20%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 330 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 30% 20%;
+    --input: 270 30% 20%;
+    --ring: 270 80% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-senoopsy-black text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .glitch-text {
+    @apply relative inline-block;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 255, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 255, 0.75),
+                0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
+    animation: glitch 2s infinite;
+  }
+  
+  .clip-skew {
+    clip-path: polygon(0 0, 100% 15px, 100% calc(100% - 15px), 0 100%);
+  }
+
+  .neon-border {
+    @apply relative;
+  }
+
+  .neon-border::before {
+    content: '';
+    @apply absolute -inset-0.5 bg-gradient-to-r from-senoopsy-purple to-senoopsy-neon rounded-md blur opacity-75 transition-opacity group-hover:opacity-100 duration-300;
+    z-index: -1;
+  }
+
+  .product-card {
+    @apply relative overflow-hidden bg-senoopsy-gray rounded-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:shadow-senoopsy-purple/20;
+  }
+}
