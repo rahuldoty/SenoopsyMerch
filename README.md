@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# Senoopsy Merch - Modern E-commerce Platform
 
-## Project info
+A modern, responsive e-commerce platform built with React, TypeScript, and shadcn/ui components.
 
-**URL**: https://lovable.dev/projects/0fb435d4-9916-4b94-88ac-d0f09560f262
+## 🚀 Features
 
-## How can I edit this code?
+- 🛍️ Product catalog with categories
+- 🔍 Product search and filtering
+- 🛒 Shopping cart functionality
+- 📱 Responsive design for all devices
+- 🎨 Modern UI with shadcn/ui components
+- ⚡ Fast performance with Vite
+- 🔒 Type-safe with TypeScript
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Query
+- **Form Handling**: React Hook Form
+- **Validation**: Zod
+- **Routing**: React Router
+- **Icons**: Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0fb435d4-9916-4b94-88ac-d0f09560f262) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+```bash
+git clone https://github.com/rahuldoty/SenoopsyMerch.git
+cd SenoopsyMerch
+```
 
-**Use your preferred IDE**
+2. Install dependencies:
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/     # Reusable UI components
+│   ├── ui/        # shadcn/ui components
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   └── ProductCard.tsx
+├── pages/         # Page components
+│   ├── CartPage.tsx
+│   ├── CategoryPage.tsx
+│   ├── ProductDetail.tsx
+│   └── Shop.tsx
+├── hooks/         # Custom React hooks
+├── services/      # API services
+└── lib/          # Utility functions
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 UI Components
 
-## What technologies are used for this project?
+The project uses shadcn/ui components, including:
+- Accordion
+- Alert Dialog
+- Avatar
+- Button
+- Card
+- Carousel
+- Checkbox
+- Dialog
+- Dropdown Menu
+- Form
+- Input
+- Navigation Menu
+- Select
+- Tabs
+- Toast
+- And many more...
 
-This project is built with:
+## 📝 Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-## How can I deploy this project?
+## 🤝 Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/0fb435d4-9916-4b94-88ac-d0f09560f262) and click on Share -> Publish.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 License
 
-Yes, you can!
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 👨‍💻 Author
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Rahul - [GitHub](https://github.com/rahuldoty)
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the amazing component library
+- [Vite](https://vitejs.dev/) for the build tool
+- [Tailwind CSS](https://tailwindcss.com/) for the styling framework
