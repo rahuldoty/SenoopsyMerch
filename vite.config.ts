@@ -4,10 +4,10 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/SenoopsyMerch/",
+  base: "/shop",
   server: {
     host: "::",
-    port: 8080,
+    port: 5173,
   },
   plugins: [
     react(),
