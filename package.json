@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/rahuldoty.github.io/SenoopsyMerch",
   "name": "senoopsy-merch",
   "private": true,
   "version": "1.0.0",
@@ -8,7 +9,8 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
